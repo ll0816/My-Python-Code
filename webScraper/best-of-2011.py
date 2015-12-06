@@ -1,3 +1,8 @@
+# !/usr/bin/python
+# -*- coding: utf-8 -*-
+# Liu Li
+# 12-03-2015
+
 from bs4 import BeautifulSoup
 from urllib2 import urlopen
 from time import sleep

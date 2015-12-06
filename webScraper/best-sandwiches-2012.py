@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Scraper for best sandwiches of 2012 in Chicago. Generate flat-formated tsv file.
 # Liu Li
-# 3 Dec, 2015
+# 12-03-2015
 # Code Source: http//www.gregreda.com/2013/04/29/more-web-scraping-with-python/
 # Source: http://www.chicagomag.com/Chicago-Magazine/November-2012/Best-Sandwiches-Chicago/
 

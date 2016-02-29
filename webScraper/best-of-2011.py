@@ -31,7 +31,7 @@ def get_category_winner(category_url):
 
 if __name__ == '__main__':
 
-    food_n_drink = "http://www.chicagoreader.com/chicago/best-of-chicago-2011-food-drink/BestOf?oid=4106228"]
+    food_n_drink = "http://www.chicagoreader.com/chicago/best-of-chicago-2011-food-drink/BestOf?oid=4106228"
     categories = get_category_links(food_n_drink)
 
     data = []

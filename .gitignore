@@ -1,0 +1,10 @@
+
+.idea/encodings.xml
+
+*.xml
+
+.idea/vcs.xml
+
+.idea/My-Python-Code.iml
+
+.ipynb_checkpoints/pandas tips-checkpoint.ipynb

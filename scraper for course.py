@@ -11,7 +11,7 @@ course_url = 'http://www.datasciencecourse.org'
 content = requests.get(course_url).content
 soup = BeautifulSoup(content, 'html.parser')
 tag_a = soup.findAll('a', class_="")
-downloads = [tag['href'] for tag in tag_a if re.search(r'(.pdf|.tar)$', tag['href'])]
+downloads = [tag['href'] for tag in tag_a if re.search(r'(.pdf|.tar|.ipynb)$', tag['href'])]
 
 full_links = []
 for d in downloads:
@@ -27,6 +27,10 @@ os.chdir(target_dir)
 for l in full_links:
     if l.endswith('.pdf'):
         file_name = re.search(r'/([^/]*.pdf)$', l).group(1)
+        if file_name not in exsited_downloads:
+            urllib.urlretrieve(l, file_name)
+    elif l.endswith('.ipynb'):
+        file_name = re.search(r'/([^/]*.ipynb)$', l).group(1)
         if file_name not in exsited_downloads:
             urllib.urlretrieve(l, file_name)
     elif l.endswith('.tar'):
